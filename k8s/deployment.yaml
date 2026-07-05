@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: pneumonia-api
+
+spec:
+  replicas: 1   # we will change this later to 3
+
+  selector:
+    matchLabels:
+      app: pneumonia-api
+
+  template:
+    metadata:
+      labels:
+        app: pneumonia-api
+
+    spec:
+      containers:
+        - name: pneumonia-api
+          image: waleedkhan02/pneumonia-api:v4
+          ports:
+            - containerPort: 8000
