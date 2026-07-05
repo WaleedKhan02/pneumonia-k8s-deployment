@@ -3,7 +3,7 @@
 This repository details the cloud-native orchestration, continuous delivery pipeline, and automated observation layout for a high-availability medical image classification microservice.
 
 ## 🏗️ System Architecture
-*(Drop your architecture diagram image from your LinkedIn posts right here!)*
+![System Architecture](architecture.jpg)
 
 ## ⚡ Core Infrastructure Features
 
